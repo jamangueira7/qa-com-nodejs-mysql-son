@@ -1,12 +1,12 @@
-const  path = require('path');
-const  express = require('express');
-const  bodyParser = require('body-parser');
-const  pino = require('express-pino-logger');
-const  expressEjsLayouts = require('express-ejs-layouts');
-const  methodOverride = require('method-override');
-const  flash = require('connect-flash');
-const  session = require('express-session');
-const  passport = require('passport');
+const path = require('path');
+const express = require('express');
+const bodyParser = require('body-parser');
+const pino = require('express-pino-logger');
+const expressEjsLayouts = require('express-ejs-layouts');
+const methodOverride = require('method-override');
+const flash = require('connect-flash');
+const session = require('express-session');
+const passport = require('./src/passport');
 
 const app = express();
 
