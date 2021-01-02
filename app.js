@@ -31,6 +31,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+require('./src/models/index');
 require('./src/index')(app);
 
 app.listen(app.get('PORT'), app.get('HOST'), () =>
