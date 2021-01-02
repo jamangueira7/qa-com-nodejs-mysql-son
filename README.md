@@ -23,11 +23,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [Bootstrap 4](https://getbootstrap.com/)
-- [MariaDB](https://mariadb.org/)
+- [Postgres](https://www.postgresql.org/)
 
 ## 💻 Projeto
 
-Projeto de um Q&A Engine com NodeJS MySql.
+Projeto de um Q&A Engine com NodeJS Postgres.
 
 Esse projeto pratico da [School of Net](https://www.schoolofnet.com/projeto-pratico/nodejs/banco-de-dados-e-nodejs/criando-uma-question-and-answers-com-nodejs-e-mysq).
 
