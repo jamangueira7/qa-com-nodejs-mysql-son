@@ -4,10 +4,14 @@
         <div class="col-sm-6 col-md-6 offset-md-3 mt-5">
             <div class="panel">
                 <div class="panel-heading">
-                    <div class="col-xs-6 col-sm-6 col-md-6">
-                        <a href="" class="active">Login</a>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <a id="form-login-change" href="#" class="active">Login</a>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <a id="form-register-change" href="#">Register</a>
+                        </div>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6"></div>
                 </div>
             </div>
             <hr>
@@ -15,7 +19,10 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
 
-                        <form action="" method="post">
+                        <form id="form-login" action="" method="post">
+                            <div class="form-group">
+                                <h4>Login</h4>
+                            </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Username">
                             </div>
@@ -24,6 +31,26 @@
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                        </form>
+
+                        <form id="form-register" action="" method="post" style="display: none;">
+                            <div class="form-group">
+                                <h4>Registro</h4>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Registro</button>
                             </div>
                         </form>
 
