@@ -10,11 +10,7 @@
 
 <br>
 
-# Snake Game
-
-<p align="center">
-  <img alt="game multiplayer" src=".github/image.PNG" width="100%">
-</p>
+# Q&A Engine
 
 ## 🚀 Tecnologias
 
@@ -22,26 +18,25 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Yarn](https://yarnpkg.com/) - 1.22.4
 - [Npm](https://www.npmjs.com/) - 6.14.5
+- [NodeJS](https://nodejs.org/en/) - v14.4.0
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Bootstrap 4](https://getbootstrap.com/)
+- [MariaDB](https://mariadb.org/)
 
 ## 💻 Projeto
 
-Projeto com o jogo da cobrinha(snake game).
+Projeto de um Q&A Engine com NodeJS MySql.
 
-Esse projeto foi inspirado no video do canal [Filipe Deschamps](https://www.youtube.com/watch?v=0sTfIZvjYJk&list=PLMdYygf53DP5SVQQrkKCVWDS0TwYLVitL).
-
-Codigo original [Github](https://github.com/filipedeschamps/meu-primeiro-jogo-multiplayer)
-
-Execute o projeto pelo [Gitbod](http://gitpod.io/#https://github.com/jamangueira7/js-jogo-multiplayer)
+Esse projeto pratico da [School of Net](https://www.schoolofnet.com/projeto-pratico/nodejs/banco-de-dados-e-nodejs/criando-uma-question-and-answers-com-nodejs-e-mysq).
 
 ## 🚀 Como Rodar
 
 - Clone o projeto.
-- yarn install.
+- npm install.
 - yarn start.
-- acesse http://localhost:3000/
+- acesse http://localhost:9000/
 
 ## 🤔 Como contribuir
 
