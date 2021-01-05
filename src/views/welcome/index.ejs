@@ -7,9 +7,9 @@
                   <div class="row">
                       <div class="col-xs-12 col-sm-12 col-md-12">
                           <h4 class="card-title">
-                              Welcome <%= user.username%>
+                              Welcome <%= user.username %>
                           </h4>
-                          <form id="form-register" action="/users" method="post">
+                          <form action="/users?_method=PUT" method="post">
                               <div class="form-group">
                                   <h5>Fill in about you:</h5>
                               </div>
