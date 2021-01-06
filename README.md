@@ -36,7 +36,9 @@ Esse projeto pratico da [School of Net](https://www.schoolofnet.com/projeto-prat
 - Clone o projeto.
 - npm install.
 - Rodar o Postgres com docker: 
-'''docker run --name gostack_postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres'''
+```
+docker run --name gostack_postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+```
 - Criar um banco com o nome app-qa.
 - yarn start.
 - acesse http://localhost:9000/
