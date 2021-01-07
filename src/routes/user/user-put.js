@@ -13,7 +13,7 @@ module.exports = async (req, res) => {
         };
         await User.update(obj, { where: { id: req.user.id }});
 
-        return res.redirect('/');
+        return res.redirect(`/t/${req.user.username}`);
     } catch (err) {
         console.log('ERROR', err);
     }
