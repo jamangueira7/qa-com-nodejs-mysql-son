@@ -24,7 +24,11 @@ module.exports = async (req, res) => {
             }
         });
 
-        const sugestions = await User.findAll({ limit: 4, order: sequelize.random(), where: { id: { [Op.notIn]: [req.user.id] }}});
+        const sugestions = await User.findAll({
+            limit: 4,
+            order: sequelize.random(),
+            where: { id: { [Op.notIn]: [req.user.id] }}
+        });
 
         return res.render('home/index', {
             user: req.user,
