@@ -5,7 +5,7 @@ module.exports = async (req, res) => {
     try{
         req.body.is_annon = req.body.is_annon ? true : false;
         req.body.question_user_id = req.user.id;
-        const user = await User.findOne({ username: req.params.username });
+        const user = await User.findOne( { username: req.params.username });
         req.body.answer_user_id = user.id;
         const answer = await Answer.create(req.body);
         if(!answer) {

@@ -1,6 +1,6 @@
 module.exports = (req, res) => {
-    res.logout();
+    req.logout();
 
-    return req.redirect('/users');
+    return res.redirect('/users');
 }
 
