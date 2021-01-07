@@ -5,12 +5,11 @@ module.exports = async (req, res) => {
     try{
         req.body.is_annon = req.body.is_annon ? true : false;
         req.body.question_user_id = req.user.id;
-        console.log('###############LOG 1', req.body.answerUser);
 
         const user = await User.findOne({
             where: { username: req.body.answerUser }
         });
-        console.log('######################LOG 2', user);
+
         if(!user) {
             throw ("Precisa de um usuario valido");
         }

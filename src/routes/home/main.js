@@ -1,13 +1,14 @@
 const Answer = require('./../../models/index').Answer;
 const User = require('./../../models/index').User;
 const Op = require('./../../models/index').Sequelize.Op;
+const sequelize = require('./../../models/index').sequelize;
 
 module.exports = async (req, res) => {
 
     try {
-        const user = await User.findOne( { where: {
-            username: req.params.username
-        }});
+        const user = await User.findOne( {
+            where: { username: req.params.username }
+        });
 
         const answers = await Answer.findAll({
             include: [{
@@ -23,7 +24,14 @@ module.exports = async (req, res) => {
             }
         });
 
-        return res.render('home/index', { user: req.user, answers, answerUser: user });
+        const sugestions = await User.findAll({ limit: 4, order: sequelize.random(), where: { id: { [Op.notIn]: [req.user.id] }}});
+
+        return res.render('home/index', {
+            user: req.user,
+            answers,
+            answerUser: user,
+            sugestions,
+        });
     } catch (err) {
         console.log('ERROR', err);
     }

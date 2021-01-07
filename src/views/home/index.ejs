@@ -30,22 +30,16 @@
                 People
             </div>
             <div class="card-body">
+                <%  sugestions.forEach(function (sugestion) { %>
                 <div class="profile row mt-2">
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <img src="https://www.gravatar.com/avatar/25eacc50908d37cefda864d1d813e6a7?s=200" alt="" class="img-fluid img-profile"/>
+                        <img src="<%= sugestion.avatar %>" alt="" class="img-fluid img-profile"/>
                     </div>
                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 mt-2 name-info">
-                        <a href="" class="">João Manguiera</a>
+                        <a href="/t/<%= sugestion.username %>" class=""><%= sugestion.name %></a>
                     </div>
                 </div>
-                <div class="profile row mt-2">
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <img src="https://www.gravatar.com/avatar/25eacc50908d37cefda864d1d813e6a7?s=200" alt="" class="img-fluid img-profile"/>
-                    </div>
-                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 mt-2 name-info">
-                        <a href="" class="">João Manguiera</a>
-                    </div>
-                </div>
+                <%  }); %>
             </div>
         </div>
     </aside>
@@ -73,7 +67,7 @@
                     </div>
                 </div>
             </div>
-        <%  });%>
+        <%  }); %>
     </section>
 </div>
 
