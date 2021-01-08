@@ -29,7 +29,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Projeto de um Q&A Engine com NodeJS Postgres.
 
-Esse projeto pratico da [School of Net](https://www.schoolofnet.com/projeto-pratico/nodejs/banco-de-dados-e-nodejs/criando-uma-question-and-answers-com-nodejs-e-mysq).
+Esse é um projeto pratico da [School of Net](https://www.schoolofnet.com/projeto-pratico/nodejs/banco-de-dados-e-nodejs/criando-uma-question-and-answers-com-nodejs-e-mysq).
 
 ## 🚀 Como Rodar
 
@@ -37,7 +37,7 @@ Esse projeto pratico da [School of Net](https://www.schoolofnet.com/projeto-prat
 - npm install.
 - Rodar o Postgres com docker: 
 ```
-docker run --name gostack_postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 ```
 - Criar um banco com o nome app-qa.
 - yarn start.
