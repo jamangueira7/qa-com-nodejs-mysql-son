@@ -24,7 +24,6 @@ app.use(expressEjsLayouts);
 app.use(flash());
 app.use(session({
     secret: '$gfadfa#$¨¨#@168faeeyii(*&',
-    secret: '$gfadfa#$¨¨#@168faeeyii(*&',
     resave: false,
     saveUninitialized: true
 }));

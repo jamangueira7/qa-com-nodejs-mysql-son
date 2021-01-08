@@ -48,21 +48,39 @@
             <div class="row mt-2 question-box">
                 <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="card-body">
-                        <div class="profile row">
-                            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
-                                <img src="<%= data.questionUser.avatar %>" alt="" class="img-fluid img-profile"/>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 mt-2 name-info">
-                                <a href="/t/<%= data.questionUser.username %>" class=""><%= data.questionUser.name %></a>
-                            </div>
-                            <%  if(checkUserDelete(user, answerUser)) { %>
-                                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                                    <form action="/answers/<%= data.id %>?_method=DELETE" method="POST">
-                                        <button type="submit" class="btn btn-link">Delete</button>
-                                    </form>
+                        <%  if (data.is_annon) { %>
+                            <div class="profile row">
+                                <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                                    <img src="https://image.flaticon.com/icons/png/128/3334/3334037.png" alt="" class="img-fluid img-profile"/>
                                 </div>
-                            <%  } %>
-                        </div>
+                                <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 mt-2 name-info">
+                                    <a href="#" class="">Annon</a>
+                                </div>
+                                <%  if(checkUserDelete(user, answerUser)) { %>
+                                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                        <form action="/answers/<%= data.id %>?_method=DELETE" method="POST">
+                                            <button type="submit" class="btn btn-link">Delete</button>
+                                        </form>
+                                    </div>
+                                <%  } %>
+                            </div>
+                        <%  } else { %>
+                            <div class="profile row">
+                                <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                                    <img src="<%= data.questionUser.avatar %>" alt="" class="img-fluid img-profile"/>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 mt-2 name-info">
+                                    <a href="/t/<%= data.questionUser.username %>" class=""><%= data.questionUser.name %></a>
+                                </div>
+                                <%  if(checkUserDelete(user, answerUser)) { %>
+                                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                        <form action="/answers/<%= data.id %>?_method=DELETE" method="POST">
+                                            <button type="submit" class="btn btn-link">Delete</button>
+                                        </form>
+                                    </div>
+                                <%  } %>
+                            </div>
+                        <%  } %>
                         <blockquote class="blockquote">
                             <p>
                                 <%= data.question %>
